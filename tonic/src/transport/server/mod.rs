@@ -22,10 +22,9 @@ pub(crate) use incoming::TlsStream;
 use crate::transport::Error;
 
 use super::{
-    service::{ Routes, ServerIo, ServiceBuilderExt},
+    service::{Or, Routes, ServerIo, ServiceBuilderExt},
     BoxFuture,
 };
-pub use super::service::Or;
 use crate::{body::BoxBody, request::ConnectionInfo};
 use futures_core::Stream;
 use futures_util::{
